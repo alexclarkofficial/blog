@@ -1,0 +1,46 @@
+body {
+  max-width: 38rem;
+  margin: 2rem;
+  padding: 0;
+  color: #444;
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+}
+
+h1, .h1, h2, .h2{
+  margin: 0.5rem 0;
+  font-family: serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 0.5rem;
+}
+
+h2, .h2 {
+  font-size: 0.75rem;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+textarea {
+  min-height: 20rem;
+  width: 100%;
+}
+
+.success {
+  color: green;
+}
+
+.danger {
+  color: red;
+}

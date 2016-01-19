@@ -1,0 +1,4 @@
+<%= render "_display_post.html", post: @post %>
+
+<%= link "Edit", to: post_path(@conn, :edit, @post) %>
+<%= link "Back", to: post_path(@conn, :index) %>
