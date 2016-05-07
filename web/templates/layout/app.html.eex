@@ -23,7 +23,7 @@
       <p class="success" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="error" role="alert"><%= get_flash(@conn, :error) %></p>
 
-      <%= @inner %>
+      <%= render @view_module, @view_template, assigns %>
 
       <%= if logged_in?(@conn) do %>
         <ul>
