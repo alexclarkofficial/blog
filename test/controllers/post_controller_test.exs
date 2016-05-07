@@ -28,11 +28,6 @@ defmodule PhoenixBlog.PostControllerTest do
     conn = post conn, post_path(conn, :create), post: @invalid_attrs
   end
 
-  test "shows chosen resource", %{conn: conn} do
-    post = Repo.insert! %Post{}
-    conn = get conn, post_path(conn, :show, post)
-  end
-
   test "renders page not found when id is nonexistent", %{conn: conn} do
     assert_raise Ecto.NoResultsError, fn ->
       get conn, post_path(conn, :show, -1)
